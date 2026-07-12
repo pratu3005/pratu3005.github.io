@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>Pratiksha Ghosh | IT Professional, Java Full Stack Developer & M.Sc. IT Student</title>
+    <meta name="description" content="Portfolio of Pratiksha Ghosh — IT Executive at Mindstix Foundation Trust, Java Full Stack Developer, M.Sc. IT student, NSS leader, and continuous learner from the University of Mumbai.">
+    <meta name="keywords" content="Pratiksha Ghosh, IT Executive, Java Full Stack Developer, Software Development, Software Testing, Project Management, Spring Boot, React, M.Sc. IT, University of Mumbai, NSS, Mindstix Foundation Trust">
+    <meta name="author" content="Pratiksha Ghosh">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Pratiksha Ghosh | IT Professional & Developer">
+    <meta property="og:description" content="IT Executive at Mindstix Foundation Trust | M.Sc. IT student | Java Full Stack Developer. Discover my journey, values, and leadership.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Premium Initials Loader (PG) -->
+    <div id="loader">
+        <div class="loader-content">
+            <svg class="loader-svg" viewBox="0 0 100 100">
+                <circle class="loader-circle" cx="50" cy="50" r="45"></circle>
+                <text class="loader-text" x="50%" y="55%" text-anchor="middle" dominant-baseline="middle">PG</text>
+            </svg>
+            <div class="loader-bar-container">
+                <div class="loader-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor Trail -->
+    <div class="custom-cursor-dot"></div>
+    <div class="custom-cursor-outline"></div>
+
+    <!-- Interactive Particle Background Canvas -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Mouse Follow Glow Effect -->
+    <div id="mouse-glow"></div>
+
+    <!-- Scroll Progress Indicator -->
+    <div id="scroll-progress"></div>
+
+    <!-- Sticky Transparent Navbar -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-symbol">&lt;</span>
+                <span class="logo-text">PG</span>
+                <span class="logo-symbol">/&gt;</span>
+            </a>
+            
+            <nav class="navbar">
+                <a href="#about" class="nav-link active">About</a>
+                <a href="#values" class="nav-link">Values</a>
+                <a href="#journey" class="nav-link">Journey</a>
+                <a href="#academic" class="nav-link">Education</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#nss" class="nav-link">NSS & Leadership</a>
+                <a href="#contact" class="nav-link nav-btn-contact">Get in Touch</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                    <i data-lucide="moon" class="theme-icon-dark"></i>
+                    <i data-lucide="sun" class="theme-icon-light"></i>
+                </button>
+                <button class="mobile-nav-toggle" aria-label="Toggle Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="badge animate-reveal">
+                    <span class="badge-dot"></span>
+                    <span class="badge-text">IT Executive @ Mindstix Foundation Trust</span>
+                </div>
+                <h1 class="hero-title animate-reveal">
+                    Hello, I'm <br>
+                    <span class="gradient-text name-glow">Pratiksha Ghosh</span>
+                </h1>
+                <h2 class="hero-subtitle animate-reveal">
+                    I am a <span id="typing-text"></span><span class="cursor-blink">|</span>
+                </h2>
+                <p class="hero-desc animate-reveal">
+                    A well-rounded IT professional balancing software development, testing, and project coordination — driven by academic depth, real-world experience, and a passion for continuous learning.
+                </p>
+                <div class="hero-actions animate-reveal">
+                    <a href="#projects" class="btn btn-primary magnetic" data-strength="15">
+                        <span>Explore Projects</span>
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline magnetic" data-strength="10">
+                        <span>Let's Talk</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Profile & Skill Orbit Image -->
+            <div class="hero-visual animate-reveal">
+                <div class="orbit-container">
+                    <div class="profile-frame">
+                        <div class="profile-glow"></div>
+                        <div class="profile-inner">
+                            <span class="profile-initials">PG</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Floating Orbit Elements -->
+                    <div class="orbit-ring ring-1"></div>
+                    <div class="orbit-ring ring-2"></div>
+                    
+                    <!-- Floating Icons around Profile -->
+                    <div class="orbit-item item-java" data-name="Java"><i data-lucide="coffee"></i></div>
+                    <div class="orbit-item item-react" data-name="React"><i data-lucide="atom"></i></div>
+                    <div class="orbit-item item-spring" data-name="Spring Boot"><i data-lucide="leaf"></i></div>
+                    <div class="orbit-item item-database" data-name="SQL"><i data-lucide="database"></i></div>
+                    <div class="orbit-item item-git" data-name="Git"><i data-lucide="git-branch"></i></div>
+                    <div class="orbit-item item-js" data-name="JavaScript"><i data-lucide="code-2"></i></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-down-hint">
+            <span class="mouse-wheel"></span>
+            <span class="scroll-text">Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Me & Stats Section -->
+    <section id="about" class="about-section scroll-section">
+        <div class="section-container">
+            <div class="section-header center">
+                <h2 class="section-title">The Person Behind The Code</h2>
+                <div class="section-underline"></div>
+                <p class="section-subtitle">Development, testing, coordination, and community service — united by curiosity and a commitment to never stop learning.</p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-text-column card-glass reveal-left">
+                    <h3>My Story</h3>
+                    <p>I am <strong>Pratiksha Ghosh</strong> — a Java Full Stack Developer and IT Executive at <strong>Mindstix Foundation Trust</strong>, where I collaborate with teams, solve technical challenges, and strengthen my communication and professional skills daily.</p>
+                    <p>I graduated with a <strong>B.Sc. in Information Technology</strong> from the University of Mumbai and am currently pursuing an <strong>M.Sc. in IT</strong> while expanding my technical expertise in parallel. I believe the best solutions come from combining technical knowledge with clear communication, collaboration, and continuous learning.</p>
+                    <p>I enjoy working across different areas — from designing and building applications to <strong>software testing</strong> and <strong>project coordination</strong>. I see project management as a bridge connecting technical execution with effective teamwork, and that excites me.</p>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i data-lucide="check-circle" class="highlight-icon"></i>
+                            <span>IT Executive (Currently Working)</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i data-lucide="check-circle" class="highlight-icon"></i>
+                            <span>NSS Volunteer & Leader</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i data-lucide="check-circle" class="highlight-icon"></i>
+                            <span>Java Full Stack Development</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i data-lucide="check-circle" class="highlight-icon"></i>
+                            <span>Software Testing & QA Awareness</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i data-lucide="check-circle" class="highlight-icon"></i>
+                            <span>Project Coordination & Teamwork</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i data-lucide="check-circle" class="highlight-icon"></i>
+                            <span>Pursuing M.Sc. IT (University of Mumbai)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-stats-column reveal-right">
+                    <!-- Stat Card 1 -->
+                    <div class="stat-card card-glass 3d-tilt">
+                        <div class="stat-icon-wrapper">
+                            <i data-lucide="briefcase"></i>
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-num" data-val="1">0</span>
+                            <span class="stat-label">Year of IT Work Experience</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Stat Card 2 -->
+                    <div class="stat-card card-glass 3d-tilt">
+                        <div class="stat-icon-wrapper">
+                            <i data-lucide="terminal"></i>
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-num" data-val="10">0</span><span class="stat-suffix">+</span>
+                            <span class="stat-label">Projects Built</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Stat Card 3 -->
+                    <div class="stat-card card-glass 3d-tilt">
+                        <div class="stat-icon-wrapper">
+                            <i data-lucide="users"></i>
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-num" data-val="120">0</span><span class="stat-suffix">+</span>
+                            <span class="stat-label">NSS Volunteering Hours</span>
+                        </div>
+                    </div>
+
+                    <!-- Stat Card 4 -->
+                    <div class="stat-card card-glass 3d-tilt">
+                        <div class="stat-icon-wrapper">
+                            <i data-lucide="graduation-cap"></i>
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-num" data-val="2">0</span>
+                            <span class="stat-label">Degrees (B.Sc. + M.Sc. IT)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personal Values Section -->
+    <section id="values" class="values-section scroll-section">
+        <div class="section-container">
+            <div class="section-header center">
+                <h2 class="section-title">My Core Values</h2>
+                <div class="section-underline"></div>
+                <p class="section-subtitle">These core guiding principles influence my work ethic, collaboration style, and personal growth.</p>
+            </div>
+            
+            <div class="values-grid">
+                <!-- Value 1: Continuous Learning -->
+                <div class="value-card card-glass 3d-tilt reveal-up">
+                    <div class="value-icon"><i data-lucide="book-open"></i></div>
+                    <h3>Continuous Learning</h3>
+                    <p>Technological landscapes evolve daily. I dedicate regular time to learning new tools, frameworks, and engineering methodologies.</p>
+                </div>
+                
+                <!-- Value 2: Teamwork -->
+                <div class="value-card card-glass 3d-tilt reveal-up" style="animation-delay: 0.1s;">
+                    <div class="value-icon"><i data-lucide="users-2"></i></div>
+                    <h3>Teamwork</h3>
+                    <p>I thrive in collaborative spaces. Diverse viewpoints enrich solutions, and software is always built better when teams unite.</p>
+                </div>
+                
+                <!-- Value 3: Growth Mindset -->
+                <div class="value-card card-glass 3d-tilt reveal-up" style="animation-delay: 0.2s;">
+                    <div class="value-icon"><i data-lucide="trending-up"></i></div>
+                    <h3>Growth Mindset</h3>
+                    <p>I view challenges as learning moments. Failures are just data points helping to refine the path toward a robust solution.</p>
+                </div>
+                
+                <!-- Value 4: Consistency -->
+                <div class="value-card card-glass 3d-tilt reveal-up" style="animation-delay: 0.3s;">
+                    <div class="value-icon"><i data-lucide="target"></i></div>
+                    <h3>Consistency</h3>
+                    <p>Small, daily improvements stack up. I maintain discipline in practice, coding habits, and project deliverables.</p>
+                </div>
+                
+                <!-- Value 5: Innovation -->
+                <div class="value-card card-glass 3d-tilt reveal-up">
+                    <div class="value-icon"><i data-lucide="rocket"></i></div>
+                    <h3>Innovation</h3>
+                    <p>I look for smart, optimized ways to solve problems. Automation, scalability, and creative coding are at my core.</p>
+                </div>
+                
+                <!-- Value 6: Community Service -->
+                <div class="value-card card-glass 3d-tilt reveal-up" style="animation-delay: 0.1s;">
+                    <div class="value-icon"><i data-lucide="heart"></i></div>
+                    <h3>Community Service</h3>
+                    <p>Giving back builds empathy and perspective. Helping others in my community shapes how I approach human-centric design.</p>
+                </div>
+                
+                <!-- Value 7: Curiosity -->
+                <div class="value-card card-glass 3d-tilt reveal-up" style="animation-delay: 0.2s;">
+                    <div class="value-icon"><i data-lucide="search"></i></div>
+                    <h3>Curiosity</h3>
+                    <p>I always ask "Why?" and "How does this work under the hood?". Curiosity is the engine that drives my coding journey.</p>
+                </div>
+                
+                <!-- Value 8: Problem Solving -->
+                <div class="value-card card-glass 3d-tilt reveal-up" style="animation-delay: 0.3s;">
+                    <div class="value-icon"><i data-lucide="zap"></i></div>
+                    <h3>Problem Solving</h3>
+                    <p>Analyzing complex scenarios, breaking them into micro-tasks, and engineering elegant, optimized code is my definition of fun.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Journey Roadmap Section -->
+    <section id="journey" class="journey-section scroll-section">
+        <div class="section-container">
+            <div class="section-header center">
+                <h2 class="section-title">My Journey Roadmap</h2>
+                <div class="section-underline"></div>
+                <p class="section-subtitle">A visual path of my evolution from a curious student to a future software engineer.</p>
+            </div>
+            
+            <div class="roadmap-timeline">
+                <div class="roadmap-line"></div>
+                
+                <!-- Roadmap Step 1 -->
+                <div class="roadmap-item reveal-left">
+                    <div class="roadmap-dot"><i data-lucide="search"></i></div>
+                    <div class="roadmap-content card-glass">
+                        <span class="roadmap-meta">Initial Spark</span>
+                        <h3>Curious Student</h3>
+                        <p>Wondering how digital systems run, asking endless questions, and exploring the foundations of tech.</p>
+                    </div>
+                </div>
+
+                <!-- Roadmap Step 2 -->
+                <div class="roadmap-item r-right reveal-right">
+                    <div class="roadmap-dot"><i data-lucide="terminal"></i></div>
+                    <div class="roadmap-content card-glass">
+                        <span class="roadmap-meta">The Discovery</span>
+                        <h3>Discovered Programming</h3>
+                        <p>Wrote my first lines of code. Instantly fascinated by the power of logic to build interactive programs.</p>
+                    </div>
+                </div>
+
+                <!-- Roadmap Step 3 -->
+                <div class="roadmap-item reveal-left">
+                    <div class="roadmap-dot"><i data-lucide="graduation-cap"></i></div>
+                    <div class="roadmap-content card-glass">
+                        <span class="roadmap-meta">2021 - 2024</span>
+                        <h3>B.Sc. Information Technology</h3>
+                        <p>Studied core CS concepts, web development, data structures, and database management systems at college.</p>
+                    </div>
+                </div>
+
+                <!-- Roadmap Step 4 -->
+                <div class="roadmap-item r-right reveal-right">
+                    <div class="roadmap-dot"><i data-lucide="users"></i></div>
+                    <div class="roadmap-content card-glass">
+                        <span class="roadmap-meta">Leadership & Service</span>
+                        <h3>NSS Leadership & Community Service</h3>
+                        <p>Joined NSS, led teams organizing college events, drove social awareness, and built team management capabilities.</p>
+                    </div>
+                </div>
+
+                <!-- Roadmap Step 5 -->
+                <div class="roadmap-item reveal-left">
+                    <div class="roadmap-dot"><i data-lucide="code-2"></i></div>
+                    <div class="roadmap-content card-glass">
+                        <span class="roadmap-meta">Practical Application</span>
+                        <h3>Technical Projects</h3>
+                        <p>Built software prototypes, explored local databases, and developed interactive frontend systems.</p>
+                    </div>
+                </div>
+
+                <!-- Roadmap Step 5.5 — TaskUs -->
+                <div class="roadmap-item r-right reveal-right">
+                    <div class="roadmap-dot"><i data-lucide="headset"></i></div>
+                    <div class="roadmap-content card-glass">
+                        <span class="roadmap-meta">9 Months · Industry Experience</span>
+                        <h3>Teammate — TaskUs</h3>
+                        <p>Contributed as a dedicated team member at TaskUs, sharpening communication, collaboration, and professional discipline within a fast-paced work environment.</p>
+                    </div>
+                </div>
+
+                <!-- Roadmap Step 6 -->
+                <div class="roadmap-item reveal-left">
+                    <div class="roadmap-dot"><i data-lucide="coffee"></i></div>
+                    <div class="roadmap-content card-glass">
+                        <span class="roadmap-meta">Professional Upskilling</span>
+                        <h3>Java Full Stack Training</h3>
+                        <p>Underwent rigorous training in Java, Spring Boot, React, Next.js, SQL, Hibernate, and REST APIs — building enterprise-ready development skills.</p>
+                    </div>
+                </div>
+
+                <!-- Roadmap Step 6.5 -->
+                <div class="roadmap-item reveal-left">
+                    <div class="roadmap-dot"><i data-lucide="briefcase"></i></div>
+                    <div class="roadmap-content card-glass">
+                        <span class="roadmap-meta">Currently Working</span>
+                        <h3>IT Executive — Mindstix Foundation Trust</h3>
+                        <p>Collaborating with teams, solving real technical challenges, and sharpening both technical and communication skills in a professional IT environment.</p>
+                    </div>
+                </div>
+
+                <!-- Roadmap Step 7 -->
+                <div class="roadmap-item reveal-left">
+                    <div class="roadmap-dot"><i data-lucide="book-open"></i></div>
+                    <div class="roadmap-content card-glass">
+                        <span class="roadmap-meta">Currently Pursuing</span>
+                        <h3>M.Sc. Information Technology</h3>
+                        <p>Pursuing Master's at University of Mumbai, deepening academic theories, network design, and research methods.</p>
+                    </div>
+                </div>
+
+                <!-- Roadmap Step 8 -->
+                <div class="roadmap-item r-right reveal-right">
+                    <div class="roadmap-dot"><i data-lucide="server"></i></div>
+                    <div class="roadmap-content card-glass">
+                        <span class="roadmap-meta">Active Development</span>
+                        <h3>Building Real-world Applications</h3>
+                        <p>Deploying production-ready applications, writing clean code, integrating database layers, and optimizing APIs.</p>
+                    </div>
+                </div>
+
+                <!-- Roadmap Step 9 -->
+                <div class="roadmap-item final-step reveal-up">
+                    <div class="roadmap-dot glow-dot"><i data-lucide="rocket"></i></div>
+                    <div class="roadmap-content card-glass highlight-border">
+                        <span class="roadmap-meta">The Destination</span>
+                        <h3>Future Software Engineer</h3>
+                        <p>Ready to deploy enterprise software solutions, innovate, and add continuous value to progressive dev teams.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Journey Section -->
+    <section id="academic" class="academic-section scroll-section">
+        <div class="section-container">
+            <div class="section-header center">
+                <h2 class="section-title">Academic Journey</h2>
+                <div class="section-underline"></div>
+                <p class="section-subtitle">Deep theoretical foundations paired with active full-stack industrial training.</p>
+            </div>
+            
+            <div class="academic-layout">
+                <div class="academic-timeline-container reveal-left">
+                    <div class="academic-card card-glass">
+                        <div class="academic-icon"><i data-lucide="graduation-cap"></i></div>
+                        <div class="academic-info">
+                            <span class="academic-date">Currently Pursuing</span>
+                            <h3>Master of Science (Information Technology)</h3>
+                            <h4 class="academic-inst">University of Mumbai</h4>
+                            <p>Deepening knowledge in advanced computing, data systems, network architecture, and research methodology. Translating theoretical constructs into robust models.</p>
+                        </div>
+                    </div>
+
+                    <div class="academic-card card-glass">
+                        <div class="academic-icon"><i data-lucide="award"></i></div>
+                        <div class="academic-info">
+                            <span class="academic-date">Graduated 2024</span>
+                            <h3>Bachelor of Science (Information Technology)</h3>
+                            <h4 class="academic-inst">Smt. Sushiladevi Deshmukh Degree College</h4>
+                            <h5 class="academic-university">University of Mumbai</h5>
+                            <p>Developed core foundations in software engineering, database normalization (SQL), object-oriented programming, and web development technologies.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="academic-philosophy card-glass reveal-right">
+                    <div class="philosophy-quote-mark">“</div>
+                    <h3>My Philosophy</h3>
+                    <p class="philosophy-text">
+                        "I chose to continue my academic education with an M.Sc. while simultaneously building practical industry skills in Java Full Stack Development. I firmly believe that strong theoretical knowledge combined with hands-on, real-world experience creates better, more resilient software engineers."
+                    </p>
+                    <p class="philosophy-author">— Pratiksha Ghosh</p>
+                    
+                    <div class="academic-badges">
+                        <span class="badge-pill">Theory + Practice</span>
+                        <span class="badge-pill">Java Full Stack</span>
+                        <span class="badge-pill">Problem Solving</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="skills-section scroll-section">
+        <div class="section-container">
+            <div class="section-header center">
+                <h2 class="section-title">Technical Expertise</h2>
+                <div class="section-underline"></div>
+                <p class="section-subtitle">A collection of languages, frameworks, databases, and developer utilities that I build with.</p>
+            </div>
+            
+            <div class="skills-layout">
+                <!-- Skills Tab Navigation -->
+                <div class="skills-nav reveal-left">
+                    <button class="skill-tab-btn active" data-tab="languages">
+                        <i data-lucide="code"></i>
+                        <span>Languages</span>
+                    </button>
+                    <button class="skill-tab-btn" data-tab="frameworks">
+                        <i data-lucide="layout"></i>
+                        <span>Frameworks</span>
+                    </button>
+                    <button class="skill-tab-btn" data-tab="databases">
+                        <i data-lucide="database"></i>
+                        <span>Databases</span>
+                    </button>
+                    <button class="skill-tab-btn" data-tab="tools">
+                        <i data-lucide="settings"></i>
+                        <span>Tools & Others</span>
+                    </button>
+                </div>
+                
+                <!-- Skills Content Pane -->
+                <div class="skills-content card-glass reveal-right">
+                    <!-- Languages Tab -->
+                    <div class="skill-pane active" id="languages">
+                        <h3>Programming Languages</h3>
+                        <div class="skill-grid">
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-label-row">
+                                    <span>Java</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-track"><div class="skill-bar" data-width="90%"></div></div>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-label-row">
+                                    <span>JavaScript (ES6+)</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-track"><div class="skill-bar" data-width="85%"></div></div>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-label-row">
+                                    <span>HTML5 / CSS3</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="skill-track"><div class="skill-bar" data-width="95%"></div></div>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-label-row">
+                                    <span>SQL</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-track"><div class="skill-bar" data-width="85%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Frameworks Tab -->
+                    <div class="skill-pane" id="frameworks">
+                        <h3>Frameworks &amp; Libraries</h3>
+                        <div class="skill-grid">
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-label-row"><span>Spring Boot</span><span>85%</span></div>
+                                <div class="skill-track"><div class="skill-bar" data-width="85%"></div></div>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-label-row"><span>React.js</span><span>80%</span></div>
+                                <div class="skill-track"><div class="skill-bar" data-width="80%"></div></div>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-label-row"><span>Next.js</span><span>75%</span></div>
+                                <div class="skill-track"><div class="skill-bar" data-width="75%"></div></div>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-label-row"><span>Spring MVC / Security</span><span>80%</span></div>
+                                <div class="skill-track"><div class="skill-bar" data-width="80%"></div></div>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-label-row"><span>Hibernate (ORM)</span><span>85%</span></div>
+                                <div class="skill-track"><div class="skill-bar" data-width="85%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Databases Tab -->
+                    <div class="skill-pane" id="databases">
+                        <h3>Database Management</h3>
+                        <div class="skill-grid">
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-label-row">
+                                    <span>MySQL</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-track"><div class="skill-bar" data-width="85%"></div></div>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-label-row">
+                                    <span>PostgreSQL</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-track"><div class="skill-bar" data-width="80%"></div></div>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-label-row">
+                                    <span>RDBMS Concepts</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-track"><div class="skill-bar" data-width="90%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tools & Others Tab -->
+                    <div class="skill-pane" id="tools">
+                        <h3>Tools, Testing & Professional Skills</h3>
+                        <div class="skill-grid">
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-label-row">
+                                    <span>Git & GitHub</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-track"><div class="skill-bar" data-width="90%"></div></div>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-label-row">
+                                    <span>REST APIs & Postman</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-track"><div class="skill-bar" data-width="85%"></div></div>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-label-row">
+                                    <span>Software Testing (Manual)</span>
+                                    <span>78%</span>
+                                </div>
+                                <div class="skill-track"><div class="skill-bar" data-width="78%"></div></div>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-label-row">
+                                    <span>Project Coordination</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-track"><div class="skill-bar" data-width="80%"></div></div>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-label-row">
+                                    <span>Team Communication</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-track"><div class="skill-bar" data-width="85%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- AI Tools Section -->
+            <div class="ai-tools-box card-glass reveal-up" style="margin-top: 30px;">
+                <h3>AI-Powered Development</h3>
+                <p>Leveraging modern AI tools to accelerate coding, debugging, and system architecture.</p>
+                <div class="ai-badges">
+                    <span class="badge-pill">ChatGPT / Claude</span>
+                    <span class="badge-pill">GitHub Copilot</span>
+                    <span class="badge-pill">Prompt Engineering</span>
+                </div>
+            </div>
+            
+            <!-- Code Snippet Display -->
+            <div class="code-snippet-box card-glass reveal-up">
+                <div class="code-header">
+                    <span class="code-dot red"></span>
+                    <span class="code-dot yellow"></span>
+                    <span class="code-dot green"></span>
+                    <span class="code-filename">PratikshaGhosh.java</span>
+                </div>
+                <pre class="code-content"><code><span class="keyword">public class</span> <span class="class-name">PratikshaGhosh</span> <span class="keyword">implements</span> ITExecutive, Developer {
+    <span class="keyword">private final</span> String role = <span class="string">"IT Executive @ Mindstix Foundation Trust"</span>;
+    <span class="keyword">private final</span> String degree = <span class="string">"M.Sc. Information Technology (Pursuing)"</span>;
+
+    <span class="keyword">public static void</span> <span class="method">main</span>(String[] args) {
+        PratikshaGhosh pg = <span class="keyword">new</span> PratikshaGhosh();
+        pg.setSkills(<span class="string">"Java"</span>, <span class="string">"Spring Boot"</span>, <span class="string">"React"</span>, <span class="string">"SQL"</span>, <span class="string">"Testing"</span>);
+        pg.setInterests(<span class="string">"Development"</span>, <span class="string">"QA"</span>, <span class="string">"Project Management"</span>);
+        
+        <span class="keyword">while</span> (pg.isCurious()) {
+            pg.learnContinuously();
+            pg.serveTheCommunity(); <span class="comment">// NSS</span>
+            pg.buildAndCollaborate();
+        }
+    }
+}</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Tools & Personality Section -->
+    <section id="ai-tools" class="ai-tools-section scroll-section">
+        <div class="section-container">
+            <div class="section-header center">
+                <h2 class="section-title">AI-Powered &amp; People-First</h2>
+                <div class="section-underline"></div>
+                <p class="section-subtitle">I leverage cutting-edge AI tools every day and I genuinely love connecting, talking, and understanding people. Confidence is the key.</p>
+            </div>
+
+            <div class="ai-layout">
+                <!-- AI Tools Grid -->
+                <div class="ai-tools-card card-glass reveal-left">
+                    <h3><i data-lucide="sparkles" style="display:inline;width:20px;height:20px;vertical-align:middle;margin-right:8px;color:var(--accent-primary);"></i>AI Tools I Use Daily</h3>
+                    <div class="ai-tool-chips">
+                        <div class="ai-chip"><i data-lucide="message-square"></i><span>ChatGPT</span></div>
+                        <div class="ai-chip"><i data-lucide="gem"></i><span>Gemini</span></div>
+                        <div class="ai-chip"><i data-lucide="book-open"></i><span>NotebookLM</span></div>
+                        <div class="ai-chip"><i data-lucide="layout-template"></i><span>Notion</span></div>
+                        <div class="ai-chip"><i data-lucide="image"></i><span>Canva</span></div>
+                        <div class="ai-chip"><i data-lucide="bot"></i><span>Claude / Copilot</span></div>
+                    </div>
+                    <p style="margin-top:20px;font-size:14px;color:var(--text-secondary);">I use AI tools to research faster, debug smarter, generate designs, plan content, and stay ahead of the curve every single day.</p>
+                </div>
+
+                <!-- Personality Cards -->
+                <div class="personality-cards-column reveal-right">
+                    <div class="personality-card card-glass">
+                        <div class="personality-icon"><i data-lucide="message-circle"></i></div>
+                        <div>
+                            <h4>I Love Talking &amp; Connecting</h4>
+                            <p>I genuinely enjoy conversations &mdash; understanding people's perspectives, listening actively, and building relationships through communication.</p>
+                        </div>
+                    </div>
+                    <div class="personality-card card-glass">
+                        <div class="personality-icon"><i data-lucide="flame"></i></div>
+                        <div>
+                            <h4>Confidence is the Key</h4>
+                            <p>I carry quiet, grounded confidence into every project, team interaction, and challenge I take on &mdash; believing in growth through action.</p>
+                        </div>
+                    </div>
+                    <div class="personality-card card-glass">
+                        <div class="personality-icon"><i data-lucide="cpu"></i></div>
+                        <div>
+                            <h4>AI-Augmented Developer</h4>
+                            <p>Combining technical skill with AI tools to work smarter &mdash; from rapid prototyping to understanding complex systems and producing better output.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section scroll-section">
+        <div class="section-container">
+            <div class="section-header center">
+                <h2 class="section-title">Featured Works</h2>
+                <div class="section-underline"></div>
+                <p class="section-subtitle">A collection of full-stack implementations and technical prototypes highlighting practical competency.</p>
+            </div>
+            
+            <!-- Project Grid -->
+            <div class="project-grid">
+
+                <!-- Project 1: Manas Mental Health Tracker -->
+                <div class="project-card card-glass reveal-up" data-category="fullstack">
+                    <div class="project-img-placeholder">
+                        <div class="project-img-overlay"></div>
+                        <i data-lucide="brain-circuit" class="project-placeholder-icon"></i>
+                        <span class="project-tag">Full Stack</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Manas &mdash; Mental Health Tracker</h3>
+                        <p>An interactive mental health tracking system with structured self-assessments, AI-powered insights, live backend, and dashboard analytics. Migrated from LocalStorage to full MySQL.</p>
+                        <div class="project-tech">
+                            <span>React</span><span>Spring Boot</span><span>MySQL</span><span>REST APIs</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/pratu3005" target="_blank" class="project-link"><i data-lucide="github"></i> Repository</a>
+                            <a href="#" class="project-link"><i data-lucide="external-link"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Smart Library Management -->
+                <div class="project-card card-glass reveal-up" data-category="backend" style="animation-delay:0.1s;">
+                    <div class="project-img-placeholder">
+                        <div class="project-img-overlay"></div>
+                        <i data-lucide="book-marked" class="project-placeholder-icon"></i>
+                        <span class="project-tag">Backend</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Smart Library Management System</h3>
+                        <p>A Java-powered system for real-time book availability, member issue logs, fine calculations, and database-normalised campus library operations with a clean UI layer.</p>
+                        <div class="project-tech">
+                            <span>Java</span><span>SQL</span><span>JDBC</span><span>RDBMS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/pratu3005" target="_blank" class="project-link"><i data-lucide="github"></i> Repository</a>
+                            <a href="#" class="project-link"><i data-lucide="external-link"></i> Case Study</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Event Management System -->
+                <div class="project-card card-glass reveal-up" data-category="fullstack" style="animation-delay:0.2s;">
+                    <div class="project-img-placeholder">
+                        <div class="project-img-overlay"></div>
+                        <i data-lucide="calendar-check" class="project-placeholder-icon"></i>
+                        <span class="project-tag">Full Stack</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Event Management System</h3>
+                        <p>A full-featured event platform supporting event creation, RSVP management, venue coordination, and attendee tracking &mdash; built with React, Next.js and a Spring Boot API.</p>
+                        <div class="project-tech">
+                            <span>React</span><span>Next.js</span><span>Spring Boot</span><span>MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/pratu3005" target="_blank" class="project-link"><i data-lucide="github"></i> Repository</a>
+                            <a href="#" class="project-link"><i data-lucide="external-link"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: In Progress -->
+                <div class="project-card card-glass reveal-up project-card-wip" data-category="fullstack">
+                    <div class="project-img-placeholder wip-bg">
+                        <div class="project-img-overlay"></div>
+                        <i data-lucide="construction" class="project-placeholder-icon"></i>
+                        <span class="project-tag wip-tag">In Progress</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>More Coming Soon &hellip;</h3>
+                        <p>Several exciting projects in active development &mdash; spanning AI integrations, React &amp; Next.js frontends, and cloud-native Spring Boot backends. Stay tuned!</p>
+                        <div class="project-tech">
+                            <span>React</span><span>Next.js</span><span>AI Tools</span><span>Spring Boot</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/pratu3005" target="_blank" class="project-link"><i data-lucide="github"></i> Follow My Progress</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- NSS & Extracurricular Activities Section -->
+    <section id="nss" class="nss-section scroll-section">
+        <div class="section-container">
+            <div class="section-header center">
+                <h2 class="section-title">Community & Leadership (NSS)</h2>
+                <div class="section-underline"></div>
+                <p class="section-subtitle">My time serving in the National Service Scheme (NSS) shaped my character, team skills, and sense of empathy.</p>
+            </div>
+            
+            <div class="nss-layout">
+                <!-- NSS Details List -->
+                <div class="nss-details-column reveal-left">
+                    <div class="nss-badge-title">
+                        <i data-lucide="heart" class="nss-heart-pulse"></i>
+                        <span>National Service Scheme (NSS)</span>
+                    </div>
+                    <p class="nss-summary">
+                        NSS helped shape my confidence, leadership abilities, and sense of social responsibility, which I carry into my professional software engineering life as well. In the field or at the keyboard, my goal is to serve and lead.
+                    </p>
+                    
+                    <div class="nss-grid">
+                        <div class="nss-card card-glass">
+                            <i data-lucide="users"></i>
+                            <div>
+                                <h4>Leadership in College Events</h4>
+                                <p>Led team coordination for major events, ensuring discipline, structure, and synchronization.</p>
+                            </div>
+                        </div>
+
+                        <div class="nss-card card-glass">
+                            <i data-lucide="hand-metal"></i>
+                            <div>
+                                <h4>Community Service Initiatives</h4>
+                                <p> Spearheaded awareness campaigns, cleanliness drives, and local volunteer programs to create real social impact.</p>
+                            </div>
+                        </div>
+
+                        <div class="nss-card card-glass">
+                            <i data-lucide="clock"></i>
+                            <div>
+                                <h4>Time & Event Management</h4>
+                                <p>Optimized logistics, schedules, and volunteer divisions, sharpening critical professional soft skills.</p>
+                            </div>
+                        </div>
+
+                        <div class="nss-card card-glass">
+                            <i data-lucide="shield-check"></i>
+                            <div>
+                                <h4>Discipline & Responsibility</h4>
+                                <p>Acquired accountability and communication skills by bridging the gap between student groups and civic bodies.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NSS Quote & Empathy focus -->
+                <div class="nss-visual-column reveal-right">
+                    <div class="nss-empathy-box card-glass">
+                        <div class="empathy-glow"></div>
+                        <h3>Building Empathy</h3>
+                        <p>
+                            "Social work taught me that technology isn't just about building systems—it's about understanding human needs and creating accessible, helpful products. Coding is a form of service to improve society."
+                        </p>
+                        
+                        <div class="nss-metrics">
+                            <div class="nss-metric-item">
+                                <span class="metric-num">100%</span>
+                                <span class="metric-label">Dedication</span>
+                            </div>
+                            <div class="nss-metric-item">
+                                <span class="metric-num">5+</span>
+                                <span class="metric-label">Campaigns Run</span>
+                            </div>
+                            <div class="nss-metric-item">
+                                <span class="metric-num">50+</span>
+                                <span class="metric-label">Volunteers Led</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Contribution Heatmap Section -->
+    <section id="github" class="github-section scroll-section">
+        <div class="section-container">
+            <div class="section-header center">
+                <h2 class="section-title">GitHub Activity</h2>
+                <div class="section-underline"></div>
+                <p class="section-subtitle">A visualization of coding dedication, open source contributions, and continuous software commits.</p>
+            </div>
+
+            <!-- GitHub Stats Cards -->
+            <div class="github-stats-grid reveal-up">
+                <div class="github-stat-card card-glass">
+                    <img
+                        src="https://github-readme-stats.vercel.app/api?username=pratu3005&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1017&title_color=8b5cf6&icon_color=3b82f6&text_color=94a3b8"
+                        alt="Pratiksha Ghosh GitHub Stats"
+                        class="github-stat-img"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="github-stat-card card-glass">
+                    <img
+                        src="https://github-readme-stats.vercel.app/api/top-langs/?username=pratu3005&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1017&title_color=8b5cf6&text_color=94a3b8"
+                        alt="Pratiksha Ghosh Top Languages"
+                        class="github-stat-img"
+                        loading="lazy"
+                    >
+                </div>
+            </div>
+
+            <div class="github-heatmap-container card-glass reveal-up" style="margin-top:30px;">
+                <div class="heatmap-header">
+                    <div class="heatmap-profile">
+                        <i data-lucide="github" class="github-icon"></i>
+                        <div>
+                            <h4>pratu3005</h4>
+                            <span>Contribution activity over the past year</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/pratu3005" target="_blank" class="btn btn-outline btn-sm">
+                        <i data-lucide="github"></i>
+                        <span>View Profile</span>
+                    </a>
+                </div>
+                
+                <!-- Contribution Heatmap Grid generated by JS -->
+                <div class="heatmap-scroll-area">
+                    <div id="heatmap-grid" class="heatmap-grid"></div>
+                </div>
+                
+                <div class="heatmap-legend">
+                    <span>Less</span>
+                    <span class="legend-box level-0"></span>
+                    <span class="legend-box level-1"></span>
+                    <span class="legend-box level-2"></span>
+                    <span class="legend-box level-3"></span>
+                    <span class="legend-box level-4"></span>
+                    <span>More</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section scroll-section">
+        <div class="section-container">
+            <div class="section-header center">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-underline"></div>
+                <p class="section-subtitle">Let's discuss academic research, software projects, full-stack opportunities, or volunteer initiatives.</p>
+            </div>
+            
+            <div class="contact-grid">
+                <!-- Info cards column -->
+                <div class="contact-info-column reveal-left">
+                    <h3>Contact Information</h3>
+                    <p>Have a question or want to work together? Feel free to reach out via these channels. I'm always open to talking tech!</p>
+                    
+                    <div class="contact-details">
+                        <!-- Email Card -->
+                        <div class="contact-detail-card card-glass 3d-tilt">
+                            <i data-lucide="mail"></i>
+                            <div>
+                                <h4>Email Me</h4>
+                                <a href="mailto:pra3tughosh@gmail.com">pra3tughosh@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <!-- Phone Card -->
+                        <div class="contact-detail-card card-glass 3d-tilt">
+                            <i data-lucide="phone"></i>
+                            <div>
+                                <h4>Call Me</h4>
+                                <a href="tel:+919833016392">+91 9833016392</a>
+                            </div>
+                        </div>
+
+                        <!-- LinkedIn Card -->
+                        <div class="contact-detail-card card-glass 3d-tilt">
+                            <i data-lucide="linkedin"></i>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <a href="https://www.linkedin.com/in/pratiksha-ghosh" target="_blank">linkedin.com/in/pratiksha-ghosh</a>
+                            </div>
+                        </div>
+
+                        <!-- GitHub Card -->
+                        <div class="contact-detail-card card-glass 3d-tilt">
+                            <i data-lucide="github"></i>
+                            <div>
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/pratu3005" target="_blank">github.com/pratu3005</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Interactive Contact Form -->
+                <div class="contact-form-column card-glass reveal-right">
+                    <form id="contact-form" action="#" method="POST">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder=" ">
+                            <label for="name">Your Name</label>
+                            <span class="input-focus-line"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required placeholder=" ">
+                            <label for="email">Your Email Address</label>
+                            <span class="input-focus-line"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required placeholder=" ">
+                            <label for="subject">Subject</label>
+                            <span class="input-focus-line"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea id="message" name="message" required rows="5" placeholder=" "></textarea>
+                            <label for="message">Your Message</label>
+                            <span class="input-focus-line"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block magnetic" data-strength="12">
+                            <span>Send Message</span>
+                            <i data-lucide="send"></i>
+                        </button>
+                    </form>
+                    
+                    <!-- Contact Form Success Popup -->
+                    <div id="contact-success" class="contact-success-state">
+                        <div class="success-icon-wrapper">
+                            <i data-lucide="check" class="success-checkmark"></i>
+                        </div>
+                        <h3>Message Sent Successfully!</h3>
+                        <p>Thank you for reaching out, Pratiksha will contact you shortly.</p>
+                        <button id="success-close-btn" class="btn btn-outline btn-sm">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top-btn" aria-label="Back to Top">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <!-- Animated Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <a href="#" class="footer-logo">
+                    <span class="logo-symbol">&lt;</span>
+                    <span class="logo-text">PG</span>
+                    <span class="logo-symbol">/&gt;</span>
+                </a>
+                <p class="footer-quote">"Confidence is the key. I believe in learning every day, connecting with people, and building things that matter."</p>
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/in/pratiksha-ghosh" target="_blank" aria-label="LinkedIn" class="footer-social-link">
+                        <i data-lucide="linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/pratu3005" target="_blank" aria-label="GitHub" class="footer-social-link">
+                        <i data-lucide="github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="mailto:pra3tughosh@gmail.com" aria-label="Email" class="footer-social-link">
+                        <i data-lucide="mail"></i>
+                        <span>Email</span>
+                    </a>
+                    <a href="tel:+919833016392" aria-label="Phone" class="footer-social-link">
+                        <i data-lucide="phone"></i>
+                        <span>Call</span>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2026 Pratiksha Ghosh &mdash; Designed &amp; Deployed with ❤️ on GitHub</p>
+                <p class="footer-credit">Built with HTML · CSS · JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Core Javascript -->
+    <script src="index.js"></script>
+</body>
+</html>
